@@ -8,7 +8,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 )
@@ -17,10 +16,6 @@ import (
 // текст "Привет из Snippetbox" как тело ответа.
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Привет из Snippetbox"))
-}
-
-func sayhello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Привет!")
 }
 
 func main() {
